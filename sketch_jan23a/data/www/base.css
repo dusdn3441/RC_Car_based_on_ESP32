@@ -1,0 +1,13 @@
+* {
+	-webkit-user-select: none;
+	user-select: none;
+}
+
+body {
+	margin: 0;
+}
+
+button {
+	width: 15em;
+	height: 15em;
+}

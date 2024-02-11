@@ -1,0 +1,52 @@
+.joystick {
+	position: relative;
+
+	width: min(100vw, 100vh);
+	height: min(100vw, 100vh);
+	aspect-ratio: 1;
+	box-sizing: border-box;
+
+	box-shadow: 0 0 5em 0 #d3d3d3 inset;
+}
+.joystick > .bg {
+	position: absolute;
+
+	border-radius: 50%;
+
+	width: min(100vw, 100vh);
+	height: min(100vw, 100vh);
+	aspect-ratio: 1;
+	box-sizing: border-box;
+
+	box-shadow: 0 0 5em 0 #d3d3d3 inset;
+}
+.joystick[data-dev-mode~="debug"] *.debug {
+	display: none;
+}
+
+.joystick > .stick {
+	position: absolute;
+
+	left: 50%;
+	top: 50%;
+
+	/* border: 1px solid #000; */
+	border-radius: 50%;
+
+	width: 25%;
+	height: 25%;
+	aspect-ratio: 1;
+	box-sizing: border-box;
+
+	background-color: #999999;
+	box-shadow: 0 0 1em 0 #676767 inset;
+
+	transform: translate(-50%, -50%);
+}
+
+/* debug nodes(s) */
+.joystick[data-dev-mode~="debug"]  .debug.line {
+	position: absolute;
+	background-color: #ff0000;
+}
+/* debug nodes(e) */

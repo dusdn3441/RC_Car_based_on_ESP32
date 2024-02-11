@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+		<title>Sketch</title>
+
+		<link rel="stylesheet" href="base.css">
+		<link rel="stylesheet" href="joystick.css">
+
+		<script defer type="module" src="main.mjs"></script>
+	</head>
+	<body>
+		<main id="app">
+			<button data-keytype="up">FORWARD</button>
+			<button data-keytype="down">BACKWARD</button>
+			<button data-keytype="left">LEFT</button>
+			<button data-keytype="right">RIGHT</button>
+
+			<div class="joystick" data-dev-mode="debug">
+				<div class="bg"></div>
+				<div class="stick"></div>
+
+				<div class="debug line"></div>
+			</div>
+		</main>
+	</body>
+</html>
